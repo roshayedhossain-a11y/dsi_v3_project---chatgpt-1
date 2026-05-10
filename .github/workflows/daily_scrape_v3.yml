@@ -1,0 +1,37 @@
+name: DSI Global Remote Jobs V3
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run filter tests
+        run: pytest -q
+
+      - name: Run DSI V3 scraper
+        run: python dsi_scraper_v3.py
+
+      - name: Upload CSV and logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: dsi_v3_jobs_${{ github.run_id }}
+          path: |
+            output/*.csv
+            logs/*.json
+          retention-days: 14
