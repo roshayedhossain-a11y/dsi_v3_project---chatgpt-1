@@ -1,0 +1,1112 @@
+settings:
+  note: DSI V3 sources. Add more small remote first SaaS ATS companies here. Keep
+    giants out of strict ICP.
+sources:
+- name: Remotive Software Dev
+  type: remotive_api
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_board
+  categories:
+  - software-dev
+  - devops-sysadmin
+  - data
+  limit: 500
+  delay_seconds: 0.7
+- name: Jobicy Engineering
+  type: jobicy_api
+  enabled: true
+  trust_score: 4
+  source_type_label: aggregator
+  industries:
+  - engineering
+  - software-development
+  - devops-sysadmin
+  limit: 50
+  delay_seconds: 0.7
+- name: RemoteOK API
+  type: remoteok_api
+  enabled: true
+  trust_score: 5
+  source_type_label: remote_board
+- name: Arbeitnow Remote API
+  type: arbeitnow_api
+  enabled: true
+  trust_score: 4
+  source_type_label: aggregator
+  max_pages: 12
+  delay_seconds: 0.7
+- name: Himalayas Remote API
+  type: himalayas_api
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_board
+  queries:
+  - engineer
+  - developer
+  - backend
+  - frontend
+  - fullstack
+  - devops
+  - data
+  - ai
+  - machine learning
+  - platform
+  - qa
+  limit: 100
+  delay_seconds: 0.7
+- name: WeWorkRemotely Programming RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  url: https://weworkremotely.com/categories/remote-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+- name: WeWorkRemotely DevOps RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  url: https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+- name: WeWorkRemotely Fullstack RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  url: https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+- name: WeWorkRemotely Backend RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  url: https://weworkremotely.com/categories/remote-back-end-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+- name: WeWorkRemotely Frontend RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  url: https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+- name: Ashby Cal.com
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: cal.com
+  company_name: Cal.com
+  company_domain: cal.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: cal.com
+    company_website: https://cal.com
+- name: Ashby Resend
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: resend
+  company_name: Resend
+  company_domain: resend.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: resend.com
+    company_website: https://resend.com
+- name: Ashby Convex
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: convex
+  company_name: Convex
+  company_domain: convex.dev
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: convex.dev
+    company_website: https://convex.dev
+- name: Ashby Raycast
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: raycast
+  company_name: Raycast
+  company_domain: raycast.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: raycast.com
+    company_website: https://raycast.com
+- name: Ashby Browserbase
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: browserbase
+  company_name: Browserbase
+  company_domain: browserbase.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: browserbase.com
+    company_website: https://browserbase.com
+- name: Ashby Clerk
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: clerk
+  company_name: Clerk
+  company_domain: clerk.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: clerk.com
+    company_website: https://clerk.com
+- name: Ashby Deno
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: deno
+  company_name: Deno
+  company_domain: deno.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: deno.com
+    company_website: https://deno.com
+- name: Ashby Inngest
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: inngest
+  company_name: Inngest
+  company_domain: inngest.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: inngest.com
+    company_website: https://inngest.com
+- name: Ashby Modal
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: modal
+  company_name: Modal
+  company_domain: modal.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: modal.com
+    company_website: https://modal.com
+- name: Ashby Railway
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: railway
+  company_name: Railway
+  company_domain: railway.app
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: railway.app
+    company_website: https://railway.app
+- name: Ashby Trigger.dev
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: trigger.dev
+  company_name: Trigger.dev
+  company_domain: trigger.dev
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: trigger.dev
+    company_website: https://trigger.dev
+- name: Ashby Unkey
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: unkey
+  company_name: Unkey
+  company_domain: unkey.dev
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: unkey.dev
+    company_website: https://unkey.dev
+- name: Ashby Qdrant
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: qdrant
+  company_name: Qdrant
+  company_domain: qdrant.tech
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: qdrant.tech
+    company_website: https://qdrant.tech
+- name: Ashby Zed
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: zed
+  company_name: Zed
+  company_domain: zed.dev
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: zed.dev
+    company_website: https://zed.dev
+- name: Ashby Replicate
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: replicate
+  company_name: Replicate
+  company_domain: replicate.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: replicate.com
+    company_website: https://replicate.com
+- name: Ashby Together AI
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: together-ai
+  company_name: Together AI
+  company_domain: together.ai
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: together.ai
+    company_website: https://together.ai
+- name: Ashby Fireworks AI
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: fireworks
+  company_name: Fireworks AI
+  company_domain: fireworks.ai
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: fireworks.ai
+    company_website: https://fireworks.ai
+- name: Ashby Groq
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: groq
+  company_name: Groq
+  company_domain: groq.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: groq.com
+    company_website: https://groq.com
+- name: Ashby Perplexity
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: perplexity
+  company_name: Perplexity
+  company_domain: perplexity.ai
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: perplexity.ai
+    company_website: https://perplexity.ai
+- name: Ashby Cursor
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: cursor
+  company_name: Cursor
+  company_domain: cursor.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: cursor.com
+    company_website: https://cursor.com
+- name: Ashby Codeium
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: codeium
+  company_name: Codeium
+  company_domain: codeium.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+    company_domain: codeium.com
+    company_website: https://codeium.com
+- name: Ashby Neon
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: neon
+  company_name: Neon
+  company_domain: neon.tech
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: neon.tech
+    company_website: https://neon.tech
+- name: Ashby PostHog
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: posthog
+  company_name: PostHog
+  company_domain: posthog.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: posthog.com
+    company_website: https://posthog.com
+- name: Ashby Supabase
+  type: ashby
+  enabled: true
+  trust_score: 10
+  board: supabase
+  company_name: Supabase
+  company_domain: supabase.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Singapore
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: supabase.com
+    company_website: https://supabase.com
+- name: Greenhouse Airbyte
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: airbyte
+  company_name: Airbyte
+  company_domain: airbyte.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: airbyte.com
+    company_website: https://airbyte.com
+- name: Greenhouse Census
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: census
+  company_name: Census
+  company_domain: getcensus.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: getcensus.com
+    company_website: https://getcensus.com
+- name: Greenhouse Dagster
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: dagster
+  company_name: Dagster
+  company_domain: dagster.io
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: dagster.io
+    company_website: https://dagster.io
+- name: Greenhouse Hightouch
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: hightouch
+  company_name: Hightouch
+  company_domain: hightouch.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: hightouch.com
+    company_website: https://hightouch.com
+- name: Greenhouse Honeycomb
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: honeycomb
+  company_name: Honeycomb
+  company_domain: honeycomb.io
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: honeycomb.io
+    company_website: https://honeycomb.io
+- name: Greenhouse Temporal
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: temporal
+  company_name: Temporal
+  company_domain: temporal.io
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: temporal.io
+    company_website: https://temporal.io
+- name: Greenhouse Redpanda
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: redpanda
+  company_name: Redpanda
+  company_domain: redpanda.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: redpanda.com
+    company_website: https://redpanda.com
+- name: Greenhouse Render
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: render
+  company_name: Render
+  company_domain: render.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+    company_domain: render.com
+    company_website: https://render.com
+- name: Greenhouse Stytch
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: stytch
+  company_name: Stytch
+  company_domain: stytch.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: stytch.com
+    company_website: https://stytch.com
+- name: Greenhouse Svix
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: svix
+  company_name: Svix
+  company_domain: svix.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: svix.com
+    company_website: https://svix.com
+- name: Greenhouse WorkOS
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: workos
+  company_name: WorkOS
+  company_domain: workos.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: workos.com
+    company_website: https://workos.com
+- name: Greenhouse Semgrep
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: semgrep
+  company_name: Semgrep
+  company_domain: semgrep.dev
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Cybersecurity
+    target_market_fit: 'yes'
+    company_domain: semgrep.dev
+    company_website: https://semgrep.dev
+- name: Greenhouse Spacelift
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: spacelift
+  company_name: Spacelift
+  company_domain: spacelift.io
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: spacelift.io
+    company_website: https://spacelift.io
+- name: Greenhouse Tailscale
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: tailscale
+  company_name: Tailscale
+  company_domain: tailscale.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Canada
+    company_type: Cybersecurity
+    target_market_fit: 'yes'
+    company_domain: tailscale.com
+    company_website: https://tailscale.com
+- name: Greenhouse Gitpod
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: gitpod
+  company_name: Gitpod
+  company_domain: gitpod.io
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: gitpod.io
+    company_website: https://gitpod.io
+- name: Greenhouse Prefect
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: prefect
+  company_name: Prefect
+  company_domain: prefect.io
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: prefect.io
+    company_website: https://prefect.io
+- name: Greenhouse Metabase
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: metabase
+  company_name: Metabase
+  company_domain: metabase.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: metabase.com
+    company_website: https://metabase.com
+- name: Greenhouse Permit.io
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: permit-io
+  company_name: Permit.io
+  company_domain: permit.io
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: permit.io
+    company_website: https://permit.io
+- name: Greenhouse incident.io
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: incident-io
+  company_name: incident.io
+  company_domain: incident.io
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United Kingdom
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: incident.io
+    company_website: https://incident.io
+- name: Greenhouse Speakeasy
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: speakeasy
+  company_name: Speakeasy
+  company_domain: speakeasy.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: speakeasy.com
+    company_website: https://speakeasy.com
+- name: Greenhouse GrowthBook
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: growthbook
+  company_name: GrowthBook
+  company_domain: growthbook.io
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: growthbook.io
+    company_website: https://growthbook.io
+- name: Greenhouse Mintlify
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: mintlify
+  company_name: Mintlify
+  company_domain: mintlify.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: mintlify.com
+    company_website: https://mintlify.com
+- name: Greenhouse Turso
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: turso
+  company_name: Turso
+  company_domain: turso.tech
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: turso.tech
+    company_website: https://turso.tech
+- name: Greenhouse Chainguard
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  board: chainguard
+  company_name: Chainguard
+  company_domain: chainguard.dev
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Cybersecurity
+    target_market_fit: 'yes'
+    company_domain: chainguard.dev
+    company_website: https://chainguard.dev
+- name: Lever Slab
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: slab
+  company_name: Slab
+  company_domain: slab.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: slab.com
+    company_website: https://slab.com
+- name: Lever Tremendous
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: tremendous
+  company_name: Tremendous
+  company_domain: tremendous.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+    company_domain: tremendous.com
+    company_website: https://tremendous.com
+- name: Lever Gem
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: gem
+  company_name: Gem
+  company_domain: gem.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: gem.com
+    company_website: https://gem.com
+- name: Lever Hotjar
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: hotjar
+  company_name: Hotjar
+  company_domain: hotjar.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: Malta
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: hotjar.com
+    company_website: https://hotjar.com
+- name: Lever Pilot
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: pilot
+  company_name: Pilot
+  company_domain: pilot.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+    company_domain: pilot.com
+    company_website: https://pilot.com
+- name: Lever Qatalog
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: qatalog
+  company_name: Qatalog
+  company_domain: qatalog.com
+  company_meta:
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: qatalog.com
+    company_website: https://qatalog.com
+- name: Lever Clearbit
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: clearbit
+  company_name: Clearbit
+  company_domain: clearbit.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: clearbit.com
+    company_website: https://clearbit.com
+- name: Lever Shortcut
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: clubhouse
+  company_name: Shortcut
+  company_domain: shortcut.com
+  company_meta:
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: shortcut.com
+    company_website: https://shortcut.com
+- name: Lever Expensify
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: expensify
+  company_name: Expensify
+  company_domain: expensify.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+    company_domain: expensify.com
+    company_website: https://expensify.com
+- name: Lever Ironclad
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: ironclad
+  company_name: Ironclad
+  company_domain: ironcladapp.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: ironcladapp.com
+    company_website: https://ironcladapp.com
+- name: Lever Leapsome
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: leapsome
+  company_name: Leapsome
+  company_domain: leapsome.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Germany
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: leapsome.com
+    company_website: https://leapsome.com
+- name: Lever Mural
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: mural
+  company_name: Mural
+  company_domain: mural.co
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: mural.co
+    company_website: https://mural.co
+- name: Lever Replit
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: replit
+  company_name: Replit
+  company_domain: replit.com
+  company_meta:
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: replit.com
+    company_website: https://replit.com
+- name: Lever Benchling
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: benchling
+  company_name: Benchling
+  company_domain: benchling.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Healthtech SaaS
+    target_market_fit: 'yes'
+    company_domain: benchling.com
+    company_website: https://benchling.com
+- name: Lever Papaya Global
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: papaya-global
+  company_name: Papaya Global
+  company_domain: papayaglobal.com
+  company_meta:
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: papayaglobal.com
+    company_website: https://papayaglobal.com
+- name: Lever Checkout.com
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: checkout-com
+  company_name: Checkout.com
+  company_domain: checkout.com
+  company_meta:
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: United Kingdom
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+    company_domain: checkout.com
+    company_website: https://checkout.com
+- name: Lever Databricks
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: databricks
+  company_name: Databricks
+  company_domain: databricks.com
+  company_meta:
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+    company_domain: databricks.com
+    company_website: https://databricks.com
+- name: Lever Asana
+  type: lever
+  enabled: true
+  trust_score: 10
+  board: asana
+  company_name: Asana
+  company_domain: asana.com
+  company_meta:
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: United States
+    company_type: B2B SaaS
+    target_market_fit: 'yes'
+    company_domain: asana.com
+    company_website: https://asana.com
+- name: Smartrecruiters Canonical
+  type: smartrecruiters
+  enabled: true
+  trust_score: 8
+  board: Canonical
+  company_name: Canonical
+  company_domain: canonical.com
+  company_meta:
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+    company_domain: canonical.com
+    company_website: https://canonical.com
+- name: Smartrecruiters N26
+  type: smartrecruiters
+  enabled: true
+  trust_score: 8
+  board: N26
+  company_name: N26
+  company_domain: n26.com
+  company_meta:
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: Germany
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+    company_domain: n26.com
+    company_website: https://n26.com
